@@ -1,0 +1,231 @@
+const autos = [
+  {
+    marca: 'BMW',
+    modelo: 'Serie 3',
+    year: 2020,
+    precio: 30000,
+    puertas: 4,
+    color: 'Blanco',
+    transmision: 'automatico',
+    imgUrl: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg',
+  },
+  {
+    marca: 'Audi',
+    modelo: 'A4',
+    year: 2020,
+    precio: 40000,
+    puertas: 4,
+    color: 'Negro',
+    transmision: 'automatico',
+    imgUrl:
+      'https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+  {
+    marca: 'Ford',
+    modelo: 'Mustang',
+    year: 2015,
+    precio: 20000,
+    puertas: 2,
+    color: 'Blanco',
+    transmision: 'automatico',
+    imgUrl:
+      'https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+  {
+    marca: 'Audi',
+    modelo: 'A6',
+    year: 2020,
+    precio: 35000,
+    puertas: 4,
+    color: 'Negro',
+    transmision: 'automatico',
+    imgUrl:
+      'https://images.pexels.com/photos/39501/lamborghini-brno-racing-car-automobiles-39501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+  {
+    marca: 'BMW',
+    modelo: 'Serie 5',
+    year: 2016,
+    precio: 70000,
+    puertas: 4,
+    color: 'Rojo',
+    transmision: 'automatico',
+    imgUrl:
+      'https://images.pexels.com/photos/88630/pexels-photo-88630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+  {
+    marca: 'Mercedes Benz',
+    modelo: 'Clase C',
+    year: 2015,
+    precio: 25000,
+    puertas: 4,
+    color: 'Blanco',
+    transmision: 'automatico',
+    imgUrl:
+      'https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+  {
+    marca: 'Chevrolet',
+    modelo: 'Camaro',
+    year: 2018,
+    precio: 60000,
+    puertas: 2,
+    color: 'Rojo',
+    transmision: 'manual',
+    imgUrl:
+      'https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+  {
+    marca: 'Ford',
+    modelo: 'Mustang',
+    year: 2019,
+    precio: 80000,
+    puertas: 2,
+    color: 'Rojo',
+    transmision: 'manual',
+    imgUrl:
+      'https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+  {
+    marca: 'Dodge',
+    modelo: 'Challenger',
+    year: 2020,
+    precio: 40000,
+    puertas: 4,
+    color: 'Blanco',
+    transmision: 'automatico',
+    imgUrl:
+      'https://images.pexels.com/photos/1035108/pexels-photo-1035108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+  {
+    marca: 'Audi',
+    modelo: 'A3',
+    year: 2017,
+    precio: 55000,
+    puertas: 2,
+    color: 'Negro',
+    transmision: 'manual',
+    imgUrl:
+      'https://images.pexels.com/photos/544542/pexels-photo-544542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+  {
+    marca: 'Dodge',
+    modelo: 'Challenger',
+    year: 2020,
+    precio: 25000,
+    puertas: 2,
+    color: 'Rojo',
+    transmision: 'manual',
+    imgUrl: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg',
+  },
+  {
+    marca: 'Mercedes Benz',
+    modelo: 'Clase C',
+    year: 2018,
+    precio: 45000,
+    puertas: 4,
+    color: 'Azul',
+    transmision: 'automatico',
+    imgUrl:
+      'https://images.pexels.com/photos/39501/lamborghini-brno-racing-car-automobiles-39501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+  {
+    marca: 'BMW',
+    modelo: 'Serie 5',
+    year: 2019,
+    precio: 90000,
+    puertas: 4,
+    color: 'Blanco',
+    transmision: 'automatico',
+    imgUrl:
+      'https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+  {
+    marca: 'Ford',
+    modelo: 'Mustang',
+    year: 2017,
+    precio: 60000,
+    puertas: 2,
+    color: 'Negro',
+    transmision: 'manual',
+    imgUrl:
+      'https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+  {
+    marca: 'Dodge',
+    modelo: 'Challenger',
+    year: 2015,
+    precio: 35000,
+    puertas: 2,
+    color: 'Azul',
+    transmision: 'automatico',
+    imgUrl: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg',
+  },
+  {
+    marca: 'BMW',
+    modelo: 'Serie 3',
+    year: 2018,
+    precio: 50000,
+    puertas: 4,
+    color: 'Blanco',
+    transmision: 'automatico',
+    imgUrl:
+      'https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+  {
+    marca: 'BMW',
+    modelo: 'Serie 5',
+    year: 2017,
+    precio: 80000,
+    puertas: 4,
+    color: 'Negro',
+    transmision: 'automatico',
+    imgUrl:
+      'https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+  {
+    marca: 'Mercedes Benz',
+    modelo: 'Clase C',
+    year: 2018,
+    precio: 40000,
+    puertas: 4,
+    color: 'Blanco',
+    transmision: 'automatico',
+    imgUrl:
+      'https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+  {
+    marca: 'Audi',
+    modelo: 'A4',
+    year: 2016,
+    precio: 30000,
+    puertas: 4,
+    color: 'Azul',
+    transmision: 'automatico',
+    imgUrl:
+      'https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },
+];
+const brands = ['Audi', 'BMW', 'Mercedes Benz', 'Chevrolet', 'Ford', 'Dodge'];
+const precios = [
+  '20000',
+  '25000',
+  '30000',
+  '35000',
+  '40000',
+  '45000',
+  '50000',
+  '55000',
+  ' 60000',
+  '65000',
+  ' 70000',
+  '75000',
+  ' 80000',
+  '85000',
+  ' 90000',
+];
+const colors = ['Negro', 'Blanco', 'Rojo', 'Azul'];
+const transmisiones = ['automatico', 'manual'];
+const puertas = ['2', '4'];
+
+export { autos, brands, precios, colors, transmisiones, puertas };
