@@ -106,7 +106,7 @@ getYears();
         :actions="false"
         incomplete-message="Por favor complete todos los campos"
       >
-        <div class="grid grid-cols-1 md:grid-cols-4 my-2">
+        <div class="grid grid-cols-1 gap-2 md:grid-cols-4 my-2">
           <FormKit
             type="select"
             name="brand"
@@ -144,7 +144,7 @@ getYears();
             @change="filtrarAuto"
           />
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-4 my-8">
+        <div class="grid grid-cols-1 gap-2 md:grid-cols-4 my-8">
           <FormKit
             type="select"
             name="puertas"
@@ -172,11 +172,14 @@ getYears();
             v-model="datosBusqueda.color"
             @change="filtrarAuto"
           />
-          <FormKit
-            type="button"
-            label="Limpiar Fomulario"
-            @click="clean"
-          />
+          <div class="flex items-end justify-center w-full">
+            <FormKit
+              type="button"
+              label="Limpiar Fomulario"
+              class="clean-button"
+              @click="clean"
+            />
+          </div>
         </div>
       </FormKit>
     </div>
@@ -200,3 +203,10 @@ getYears();
     </div>
   </div>
 </template>
+<style>
+.clean-button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+</style>
